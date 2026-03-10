@@ -1,2 +1,1 @@
-# MC Resourcepack Template
-Just copy and use
+# Resourcepack for Cloudie S10
