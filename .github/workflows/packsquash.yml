@@ -5,7 +5,7 @@ on:
       - master
 
 env:
-  PACK_ZIP: /tmp/mc-Template-RP.zip
+  PACK_ZIP: /tmp/cloudie-s10-RP.zip
 
 jobs:
   packsquash:
