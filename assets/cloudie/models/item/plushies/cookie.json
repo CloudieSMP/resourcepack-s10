@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "cloudie:item/plushies/cookie_plushie",
-		"particle": "cloudie:item/plushies/cookie_plushie"
+		"0": "cloudie:item/plushies/cookie",
+		"particle": "cloudie:item/plushies/cookie"
 	},
 	"elements": [
 		{
