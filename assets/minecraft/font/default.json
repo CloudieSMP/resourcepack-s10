@@ -97,6 +97,13 @@
 			"ascent":9,
 			"height":9,
 			"chars":["\uE201"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/type_plushie.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE202"]
 		}
     ]
 }
