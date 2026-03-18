@@ -27,6 +27,76 @@
 			"ascent":7,
 			"height":7,
 			"chars":["\uE010"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/rarity_special.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE100"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/rarity_common.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE101"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/rarity_uncommon.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE102"]
+		},
+				{
+			"type":"bitmap",
+			"file":"font/rarity_rare.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE103"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/rarity_epic.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE104"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/rarity_legendary.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE105"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/rarity_mythic.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE106"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/rarity_unreal.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE107"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/type_utility.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE200"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/type_consumable.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE201"]
 		}
     ]
 }
