@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "cloudie:item/crate",
-		"particle": "cloudie:item/crate"
+		"0": "cloudie:item/crates/crate_default",
+		"particle": "cloudie:item/crates/crate_default"
 	},
 	"elements": [
 		{

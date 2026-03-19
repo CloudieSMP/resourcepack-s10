@@ -1,6 +1,6 @@
 {
 	"model": {
 		"type": "minecraft:model",
-		"model": "cloudie:item/crate"
+		"model": "cloudie:item/crates/crate_player"
 	}
 }
