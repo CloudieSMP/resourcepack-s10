@@ -1,10 +1,10 @@
 {
-	"format_version": "1.21.6",
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "cloudie:item/plushies/cookie",
-		"particle": "cloudie:item/plushies/cookie"
+		"0": "cloudie:item/plushies/player/cookie",
+		"particle": "cloudie:item/plushies/player/cookie"
 	},
 	"elements": [
 		{

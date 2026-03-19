@@ -1,7 +1,0 @@
-{
-  "parent": "cloudie:item/plushies/default_plushie",
-  "textures": {
-    "1": "cloudie:item/plushies/sebiann",
-    "particle": "cloudie:item/plushies/sebiann"
-  }
-}

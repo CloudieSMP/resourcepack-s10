@@ -1,10 +1,10 @@
 {
-	"format_version": "1.21.6",
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "cloudie:item/plushies/beauver",
-		"particle": "cloudie:item/plushies/beauver"
+		"0": "cloudie:item/plushies/player/beauver",
+		"particle": "cloudie:item/plushies/player/beauver"
 	},
 	"elements": [
 		{

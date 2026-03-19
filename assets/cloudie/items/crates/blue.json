@@ -1,6 +1,6 @@
 {
 	"model": {
 		"type": "minecraft:model",
-		"model": "cloudie:item/ramen_bowl"
+		"model": "cloudie:item/crates/blue"
 	}
 }

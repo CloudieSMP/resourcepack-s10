@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "cloudie:item/ramen_bowl",
-		"particle": "cloudie:item/ramen_bowl"
+		"0": "cloudie:item/plushies/ramen_bowl",
+		"particle": "cloudie:item/plushies/ramen_bowl"
 	},
 	"elements": [
 		{
@@ -339,11 +339,34 @@
 			"rotation": [63.44, -20.94, 9.1],
 			"translation": [-0.5, 3.5, 5.25]
 		},
+		"thirdperson_lefthand": {
+			"rotation": [63.44, -20.94, 9.1],
+			"translation": [-0.5, 3.5, 5.25]
+		},
+		"firstperson_righthand": {
+			"translation": [1.25, 5.5, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [1.25, 5.5, 0]
+		},
 		"ground": {
-			"translation": [0, 1.75, 0]
+			"translation": [0, 4, 0]
+		},
+		"gui": {
+			"rotation": [15, 13, 0],
+			"translation": [0, 7.25, 0],
+			"scale": [1.5, 1.5, 1.5]
 		},
 		"head": {
-			"translation": [0, 14.75, 0]
+			"translation": [0, 14.25, 0]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -8]
+		},
+		"on_shelf": {
+			"translation": [0, 12, 2.25],
+			"scale": [1.5, 1.5, 1.5]
 		}
 	}
 }

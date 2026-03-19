@@ -1,9 +1,10 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "cloudie:item/plushies/mushroom_plushie",
-		"particle": "cloudie:item/plushies/mushroom_plushie"
+		"0": "cloudie:item/plushies/mushroom",
+		"particle": "cloudie:item/plushies/mushroom"
 	},
 	"elements": [
 		{
@@ -310,16 +311,38 @@
 			"rotation": [174.53, 21.31, -159.63],
 			"translation": [2.25, 6.25, 0]
 		},
+		"thirdperson_lefthand": {
+			"rotation": [174.53, 21.31, -159.63],
+			"translation": [2.25, 6.25, 0]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 132, 0],
+			"translation": [1.75, 8.25, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 132, 0],
+			"translation": [1.75, 8.25, 0]
+		},
 		"ground": {
-			"translation": [0, 3.5, 0]
+			"translation": [0, 4.25, 0]
+		},
+		"gui": {
+			"rotation": [15, -165, 0],
+			"translation": [0, 6, 0],
+			"scale": [1.5, 1.5, 1.5]
 		},
 		"head": {
 			"translation": [-0.5, 18.5, 0],
 			"scale": [1.5, 1.5, 1.5]
 		},
 		"fixed": {
-			"rotation": [91.01, 1.28, -179.93],
-			"translation": [0.5, 0.75, -11],
+			"rotation": [-90, 0, 0],
+			"translation": [0.5, 0.75, -12],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"on_shelf": {
+			"rotation": [0, -180, 0],
+			"translation": [0, 10.75, 0],
 			"scale": [1.5, 1.5, 1.5]
 		}
 	}
