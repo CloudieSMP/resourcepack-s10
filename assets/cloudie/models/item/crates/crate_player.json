@@ -1,7 +1,0 @@
-{
-  "parent": "cloudie:item/crates/crate_default",
-  "textures": {
-    "1": "cloudie:item/crates/crate_player",
-    "particle": "cloudie:item/crates/crate_player"
-  }
-}

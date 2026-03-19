@@ -1,0 +1,7 @@
+{
+  "parent": "cloudie:item/crates/default",
+  "textures": {
+    "0": "cloudie:item/crates/plushie",
+    "particle": "cloudie:item/crates/plushie"
+  }
+}
