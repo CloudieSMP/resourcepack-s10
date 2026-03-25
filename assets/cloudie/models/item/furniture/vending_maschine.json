@@ -1,0 +1,24 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [80, 80],
+	"textures": {
+		"0": "cloudie:item/furniture/vending_maschine",
+		"particle": "cloudie:item/furniture/vending_maschine"
+	},
+	"elements": [
+		{
+			"from": [-8, 0, 0],
+			"to": [24, 32, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 6.4, 6.4], "texture": "#0"},
+				"east": {"uv": [6.4, 0, 9.6, 6.4], "texture": "#0"},
+				"south": {"uv": [0, 6.4, 6.4, 12.8], "texture": "#0"},
+				"west": {"uv": [6.4, 6.4, 9.6, 12.8], "texture": "#0"},
+				"up": {"uv": [16, 3.2, 9.6, 0], "texture": "#0"},
+				"down": {"uv": [16, 3.2, 9.6, 6.4], "texture": "#0"}
+			}
+		}
+	]
+}
