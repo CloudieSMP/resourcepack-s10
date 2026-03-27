@@ -1,6 +1,6 @@
 {
 	"model": {
 		"type": "minecraft:model",
-		"model": "cloudie:item/plushies/player/default-slim"
+		"model": "cloudie:item/plushies/player/default_slim"
 	}
 }
