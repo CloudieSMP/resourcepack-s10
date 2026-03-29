@@ -86,6 +86,27 @@
 		},
 		{
 			"type":"bitmap",
+			"file":"font/sub_rarity_shiny.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE151"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/sub_rarity_shadow.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE152"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/sub_rarity_obfuscated.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE153"]
+		},
+		{
+			"type":"bitmap",
 			"file":"font/type_utility.png",
 			"ascent":9,
 			"height":9,
