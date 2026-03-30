@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cloudie:item/cards/mobs/armadillo"
+  }
+}
