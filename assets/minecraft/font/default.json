@@ -86,6 +86,20 @@
 		},
 		{
 			"type":"bitmap",
+			"file":"font/rarity_transcendent.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE108"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/rarity_celestial.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE109"]
+		},
+		{
+			"type":"bitmap",
 			"file":"font/sub_rarity_shiny.png",
 			"ascent":9,
 			"height":9,
@@ -125,6 +139,13 @@
 			"ascent":9,
 			"height":9,
 			"chars":["\uE202"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/type_card.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE203"]
 		}
     ]
 }
