@@ -1,0 +1,7 @@
+{
+  "parent": "cloudie:item/boosters/standard_booster_pack",
+  "textures": {
+    "0": "cloudie:item/boosters/super_booster_pack",
+    "particle": "cloudie:item/boosters/super_booster_pack"
+  }
+}
