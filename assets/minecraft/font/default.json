@@ -146,6 +146,13 @@
 			"ascent":9,
 			"height":9,
 			"chars":["\uE203"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/type_armor.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE204"]
 		}
     ]
 }
