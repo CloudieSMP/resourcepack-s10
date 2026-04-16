@@ -1,0 +1,7 @@
+{
+  "parent": "cloudie:item/plushies/player/default_wide",
+  "textures": {
+    "1": "cloudie:item/plushies/character/batman_wide",
+    "particle": "cloudie:item/plushies/character/batman_wide"
+  }
+}
