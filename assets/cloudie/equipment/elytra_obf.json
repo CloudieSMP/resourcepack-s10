@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "wings": [
+      {
+        "texture": "cloudie:elytra_obf",
+        "use_player_texture": false
+      }
+    ]
+  }
+}
