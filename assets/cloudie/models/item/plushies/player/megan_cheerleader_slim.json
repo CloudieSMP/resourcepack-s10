@@ -1,0 +1,7 @@
+{
+	"parent": "cloudie:item/plushies/player/default_slim",
+	"textures": {
+		"1": "cloudie:item/plushies/player/megan_cheerleader_slim",
+		"particle": "cloudie:item/plushies/player/megan_cheerleader_slim"
+	}
+}
