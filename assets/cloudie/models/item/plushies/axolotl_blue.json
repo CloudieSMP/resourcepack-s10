@@ -1,0 +1,7 @@
+{
+  "parent": "cloudie:item/plushies/axolotl",
+  "textures": {
+    "1": "cloudie:item/plushies/axolotl_blue",
+    "particle": "cloudie:item/plushies/axolotl_blue"
+  }
+}
