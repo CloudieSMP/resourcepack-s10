@@ -9,6 +9,8 @@ jobs:
   generate-json:
     name: Generate missing plushie JSON files
     runs-on: ubuntu-latest
+    # Skip runs triggered by the bot's own auto-generated commit to prevent loops
+    if: github.actor != 'github-actions[bot]'
     permissions:
       contents: write
 
@@ -46,29 +48,32 @@ jobs:
             # Create item definition if missing
             if [ ! -f "${item_file}" ]; then
               mkdir -p "$(dirname "${item_file}")"
-              cat > "${item_file}" <<EOF
-          {
-          	"model": {
-          		"type": "minecraft:model",
-          		"model": "${NAMESPACE}:item/plushies/${name}"
-          	}
-          }
-          EOF
+              cat > "${item_file}" <<'EOF'
+{
+	"model": {
+		"type": "minecraft:model",
+		"model": "PLACEHOLDER_MODEL"
+	}
+}
+EOF
+              # Substitute the placeholder with the actual value
+              sed -i "s|PLACEHOLDER_MODEL|${NAMESPACE}:item/plushies/${name}|" "${item_file}"
               echo "Created item: ${item_file}"
             fi
 
             # Create model if missing
             if [ ! -f "${model_file}" ]; then
               mkdir -p "$(dirname "${model_file}")"
-              cat > "${model_file}" <<EOF
-          {
-            "parent": "${parent}",
-            "textures": {
-              "1": "${texture_ref}",
-              "particle": "${texture_ref}"
-            }
-          }
-          EOF
+              cat > "${model_file}" <<'EOF'
+{
+  "parent": "PLACEHOLDER_PARENT",
+  "textures": {
+    "1": "PLACEHOLDER_TEXTURE",
+    "particle": "PLACEHOLDER_TEXTURE"
+  }
+}
+EOF
+              sed -i "s|PLACEHOLDER_PARENT|${parent}|; s|PLACEHOLDER_TEXTURE|${texture_ref}|g" "${model_file}"
               echo "Created model: ${model_file}"
             fi
           done
