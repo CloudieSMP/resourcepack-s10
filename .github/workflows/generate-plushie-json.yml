@@ -48,32 +48,14 @@ jobs:
             # Create item definition if missing
             if [ ! -f "${item_file}" ]; then
               mkdir -p "$(dirname "${item_file}")"
-              cat > "${item_file}" <<'EOF'
-{
-	"model": {
-		"type": "minecraft:model",
-		"model": "PLACEHOLDER_MODEL"
-	}
-}
-EOF
-              # Substitute the placeholder with the actual value
-              sed -i "s|PLACEHOLDER_MODEL|${NAMESPACE}:item/plushies/${name}|" "${item_file}"
+              printf '{\n\t"model": {\n\t\t"type": "minecraft:model",\n\t\t"model": "%s:item/plushies/%s"\n\t}\n}\n' "${NAMESPACE}" "${name}" > "${item_file}"
               echo "Created item: ${item_file}"
             fi
 
             # Create model if missing
             if [ ! -f "${model_file}" ]; then
               mkdir -p "$(dirname "${model_file}")"
-              cat > "${model_file}" <<'EOF'
-{
-  "parent": "PLACEHOLDER_PARENT",
-  "textures": {
-    "1": "PLACEHOLDER_TEXTURE",
-    "particle": "PLACEHOLDER_TEXTURE"
-  }
-}
-EOF
-              sed -i "s|PLACEHOLDER_PARENT|${parent}|; s|PLACEHOLDER_TEXTURE|${texture_ref}|g" "${model_file}"
+              printf '{\n  "parent": "%s",\n  "textures": {\n    "1": "%s",\n    "particle": "%s"\n  }\n}\n' "${parent}" "${texture_ref}" "${texture_ref}" > "${model_file}"
               echo "Created model: ${model_file}"
             fi
           done
