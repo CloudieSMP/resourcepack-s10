@@ -1,7 +1,0 @@
-{
-  "parent": "cloudie:item/plushies/player/default_wide",
-  "textures": {
-    "1": "cloudie:item/plushies/character/storm_trooper_wide",
-    "particle": "cloudie:item/plushies/character/storm_trooper_wide"
-  }
-}
