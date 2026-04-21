@@ -1,0 +1,91 @@
+name: Generate plushie JSON files
+
+on:
+  push:
+    branches:
+      - "plush/**"
+
+jobs:
+  generate-json:
+    name: Generate missing plushie JSON files
+    runs-on: ubuntu-latest
+    # Skip runs triggered by the bot's own auto-generated commit to prevent loops
+    if: github.actor != 'github-actions[bot]'
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate missing JSON files
+        shell: bash
+        run: |
+          NAMESPACE="cloudie"
+          TEXTURES_BASE="assets/${NAMESPACE}/textures/item/plushies"
+          ITEMS_BASE="assets/${NAMESPACE}/items/plushies"
+          MODELS_BASE="assets/${NAMESPACE}/models/item/plushies"
+
+          for texture_path in $(find "${TEXTURES_BASE}" -name "*.png" | sort); do
+            # Derive relative name (e.g. "character/boba_fett_slim" or "player/yann_wide")
+            rel="${texture_path#${TEXTURES_BASE}/}"
+            name="${rel%.png}"
+
+            item_file="${ITEMS_BASE}/${name}.json"
+            model_file="${MODELS_BASE}/${name}.json"
+
+            # Determine parent model from suffix
+            if [[ "$name" == *_slim ]]; then
+              parent="${NAMESPACE}:item/plushies/player/default_slim"
+            elif [[ "$name" == *_wide ]]; then
+              parent="${NAMESPACE}:item/plushies/player/default_wide"
+            else
+              parent="${NAMESPACE}:item/plushies/player/default"
+            fi
+
+            texture_ref="${NAMESPACE}:item/plushies/${name}"
+
+            # Create item definition if missing
+            if [ ! -f "${item_file}" ]; then
+              mkdir -p "$(dirname "${item_file}")"
+              cat > "${item_file}" <<'EOF'
+{
+	"model": {
+		"type": "minecraft:model",
+		"model": "PLACEHOLDER_MODEL"
+	}
+}
+EOF
+              # Substitute the placeholder with the actual value
+              sed -i "s|PLACEHOLDER_MODEL|${NAMESPACE}:item/plushies/${name}|" "${item_file}"
+              echo "Created item: ${item_file}"
+            fi
+
+            # Create model if missing
+            if [ ! -f "${model_file}" ]; then
+              mkdir -p "$(dirname "${model_file}")"
+              cat > "${model_file}" <<'EOF'
+{
+  "parent": "PLACEHOLDER_PARENT",
+  "textures": {
+    "1": "PLACEHOLDER_TEXTURE",
+    "particle": "PLACEHOLDER_TEXTURE"
+  }
+}
+EOF
+              sed -i "s|PLACEHOLDER_PARENT|${parent}|; s|PLACEHOLDER_TEXTURE|${texture_ref}|g" "${model_file}"
+              echo "Created model: ${model_file}"
+            fi
+          done
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          if git diff --cached --quiet; then
+            echo "No new files to commit."
+          else
+            git commit -m "Auto-generate missing plushie JSON files"
+            git push
+          fi
