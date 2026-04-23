@@ -30,6 +30,13 @@
 		},
 		{
 			"type":"bitmap",
+			"file":"font/state_nosleep.png",
+			"ascent":7,
+			"height":7,
+			"chars":["\uE011"]
+		},
+		{
+			"type":"bitmap",
 			"file":"font/rarity_special.png",
 			"ascent":9,
 			"height":9,
