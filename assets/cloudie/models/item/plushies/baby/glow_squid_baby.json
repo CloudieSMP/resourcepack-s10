@@ -1,0 +1,7 @@
+{
+  "parent": "cloudie:item/plushies/baby/squid_baby",
+  "textures": {
+    "0": "cloudie:item/plushies/baby/glow_squid_baby",
+    "particle": "cloudie:item/plushies/baby/glow_squid_baby"
+  }
+}
