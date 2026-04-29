@@ -15,6 +15,13 @@
 			"chars":["\uE002"]
 		},
 		{
+			"type":"bitmap",
+			"file":"font/alt.png",
+			"ascent":7,
+			"height":7,
+			"chars":["\uE003"]
+		},
+		{
 			"type": "bitmap",
 			"file": "font/logo.png",
 			"ascent": 50,
