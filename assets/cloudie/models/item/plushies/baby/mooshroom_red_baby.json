@@ -1,0 +1,7 @@
+{
+  "parent": "cloudie:item/plushies/baby/cow_temperate_baby",
+  "textures": {
+    "0": "cloudie:item/plushies/baby/mooshroom_red_baby",
+    "particle": "cloudie:item/plushies/baby/mooshroom_red_baby"
+  }
+}

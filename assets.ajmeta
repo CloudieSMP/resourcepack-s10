@@ -1,0 +1,20 @@
+{
+	"formatVersion": "1.0.0",
+	"rigs": {
+		"cloudie": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/cloudie/fins_left.json",
+				"assets/animated_java/items/blueprint/cloudie/fins_right.json",
+				"assets/animated_java/items/blueprint/cloudie/fins_top.json",
+				"assets/animated_java/items/blueprint/cloudie/non_moving.json",
+				"assets/animated_java/items/blueprint/cloudie/tail.json",
+				"assets/animated_java/models/blueprint/cloudie/fins_left.json",
+				"assets/animated_java/models/blueprint/cloudie/fins_right.json",
+				"assets/animated_java/models/blueprint/cloudie/fins_top.json",
+				"assets/animated_java/models/blueprint/cloudie/non_moving.json",
+				"assets/animated_java/models/blueprint/cloudie/tail.json"
+			]
+		}
+	}
+}

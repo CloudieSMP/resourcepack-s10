@@ -1,0 +1,7 @@
+{
+  "parent": "cloudie:item/plushies/baby/chicken_temperate_baby",
+  "textures": {
+    "0": "cloudie:item/plushies/baby/chicken_warm_baby",
+    "particle": "cloudie:item/plushies/baby/chicken_warm_baby"
+  }
+}
