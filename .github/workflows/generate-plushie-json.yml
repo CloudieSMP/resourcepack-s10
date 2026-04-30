@@ -26,7 +26,7 @@ jobs:
           ITEMS_BASE="assets/${NAMESPACE}/items/plushies"
           MODELS_BASE="assets/${NAMESPACE}/models/item/plushies"
 
-          for texture_path in $(git diff-tree --no-commit-id -r --name-only HEAD | grep "^${TEXTURES_BASE}/.*\.png$" | sort); do
+          for texture_path in $(git diff-tree --no-commit-id -r --name-only HEAD | grep "^${TEXTURES_BASE}.*\.png$" | sort); do
             # Derive relative name (e.g. "character/boba_fett_slim" or "player/yann_wide")
             rel="${texture_path#${TEXTURES_BASE}/}"
             name="${rel%.png}"
