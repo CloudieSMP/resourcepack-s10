@@ -17,16 +17,28 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Generate missing JSON files
         shell: bash
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.event.after }}
         run: |
           NAMESPACE="cloudie"
           TEXTURES_BASE="assets/${NAMESPACE}/textures/item/plushies"
           ITEMS_BASE="assets/${NAMESPACE}/items/plushies"
           MODELS_BASE="assets/${NAMESPACE}/models/item/plushies"
 
-          for texture_path in $(find "${TEXTURES_BASE}" -name "*.png" | sort); do
+          # On the very first push to a branch, BEFORE is all zeros — fall back to find.
+          if [[ "$BEFORE" == "0000000000000000000000000000000000000000" ]]; then
+            texture_paths=$(find "${TEXTURES_BASE}" -name "*.png" | sort)
+          else
+            texture_paths=$(git diff --name-only "$BEFORE" "$AFTER" | grep "^${TEXTURES_BASE}/.*\.png$" | sort)
+          fi
+
+          for texture_path in $texture_paths; do
             # Derive relative name (e.g. "character/boba_fett_slim" or "player/yann_wide")
             rel="${texture_path#${TEXTURES_BASE}/}"
             name="${rel%.png}"
