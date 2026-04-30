@@ -33,9 +33,9 @@ jobs:
 
           # On the very first push to a branch, BEFORE is all zeros — fall back to find.
           if [[ "$BEFORE" == "0000000000000000000000000000000000000000" ]]; then
-            texture_paths=$(find "${TEXTURES_BASE}" -name "*.png" | sort)
+            texture_paths=$(find "${TEXTURES_BASE}/player" "${TEXTURES_BASE}/character" -name "*.png" 2>/dev/null | sort)
           else
-            texture_paths=$(git diff --name-only "$BEFORE" "$AFTER" | grep "^${TEXTURES_BASE}/.*\.png$" | sort)
+            texture_paths=$(git diff --name-only "$BEFORE" "$AFTER" | grep "^${TEXTURES_BASE}/\(player\|character\)/.*\.png$" | sort)
           fi
 
           for texture_path in $texture_paths; do
