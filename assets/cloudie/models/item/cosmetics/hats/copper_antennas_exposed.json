@@ -1,0 +1,6 @@
+{
+  "parent": "cloudie:item/cosmetics/hats/copper_antennas",
+  "textures": {
+    "0": "cloudie:item/cosmetics/hats/copper_antennas_exposed"
+  }
+}
