@@ -607,34 +607,43 @@
 		"fixed": {
 			"rotation": [-90, 0, 0],
 			"translation": [0, 0, -8]
+		},
+		"on_shelf": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 0, 4.5]
 		}
 	},
 	"groups": [
 		{
 			"name": "big hearts",
 			"origin": [0, 0, 0],
+			"scope": 0,
 			"color": 0,
 			"children": [
 				{
 					"name": "heart south",
 					"origin": [0, 0, 0],
+					"scope": 0,
 					"color": 0,
 					"children": [
 						{
 							"name": "group",
 							"origin": [0, 0, 0],
+							"scope": 0,
 							"color": 0,
 							"children": [0, 1, 2, 3]
 						},
 						{
 							"name": "group",
 							"origin": [0, 0, 0],
+							"scope": 0,
 							"color": 0,
 							"children": [4, 5, 6]
 						},
 						{
 							"name": "group",
 							"origin": [0, 0, 0],
+							"scope": 0,
 							"color": 0,
 							"children": [7, 8, 9]
 						}
@@ -643,23 +652,27 @@
 				{
 					"name": "left",
 					"origin": [0, 0, 0],
+					"scope": 0,
 					"color": 0,
 					"children": [
 						{
 							"name": "group",
 							"origin": [0, 0, 0],
+							"scope": 0,
 							"color": 0,
 							"children": [10, 11, 12, 13]
 						},
 						{
 							"name": "group",
 							"origin": [0, 0, 0],
+							"scope": 0,
 							"color": 0,
 							"children": [14, 15, 16]
 						},
 						{
 							"name": "group",
 							"origin": [0, 0, 0],
+							"scope": 0,
 							"color": 0,
 							"children": [17, 18, 19]
 						}
@@ -668,23 +681,27 @@
 				{
 					"name": "right",
 					"origin": [0, 0, 0],
+					"scope": 0,
 					"color": 0,
 					"children": [
 						{
 							"name": "group",
 							"origin": [0, 0, 0],
+							"scope": 0,
 							"color": 0,
 							"children": [20, 21, 22, 23]
 						},
 						{
 							"name": "group",
 							"origin": [0, 0, 0],
+							"scope": 0,
 							"color": 0,
 							"children": [24, 25, 26]
 						},
 						{
 							"name": "group",
 							"origin": [0, 0, 0],
+							"scope": 0,
 							"color": 0,
 							"children": [27, 28, 29]
 						}
@@ -693,23 +710,27 @@
 				{
 					"name": "north",
 					"origin": [0, 0, 0],
+					"scope": 0,
 					"color": 0,
 					"children": [
 						{
 							"name": "group",
 							"origin": [0, 0, 0],
+							"scope": 0,
 							"color": 0,
 							"children": [30, 31, 32, 33]
 						},
 						{
 							"name": "group",
 							"origin": [0, 0, 0],
+							"scope": 0,
 							"color": 0,
 							"children": [34, 35, 36]
 						},
 						{
 							"name": "group",
 							"origin": [0, 0, 0],
+							"scope": 0,
 							"color": 0,
 							"children": [37, 38, 39]
 						}
@@ -720,6 +741,7 @@
 		{
 			"name": "base",
 			"origin": [0, 0, 0],
+			"scope": 0,
 			"color": 0,
 			"children": [40, 41, 42, 43]
 		}
