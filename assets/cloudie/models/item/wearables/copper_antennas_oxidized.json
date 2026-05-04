@@ -1,6 +1,0 @@
-{
-  "parent": "cloudie:item/wearables/copper_antennas",
-  "textures": {
-    "0": "cloudie:item/wearables/copper_antennas_oxidized"
-  }
-}
