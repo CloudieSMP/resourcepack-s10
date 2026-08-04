@@ -1,6 +1,7 @@
 {
   "pack": {
     "description": "§SCloudie's Server §r- §5Main Resource Pack",
+    "pack_format": 88,
     "min_format": 88,
     "max_format": 88
   }
