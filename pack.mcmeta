@@ -1,12 +1,7 @@
 {
-	"pack": {
-		"pack_format": 88,
-		"min_format": 69,
-		"max_format": 9999999,
-		"description": "§SCloudie's Server §r- §5Main Resource Pack",
-		"supported_formats": {
-			"min_inclusive": 55,
-			"max_inclusive": 88
-		}
-	}
+  "pack": {
+    "description": "§SCloudie's Server §r- §5Main Resource Pack",
+    "min_format": 88,
+    "max_format": 88
+  }
 }
